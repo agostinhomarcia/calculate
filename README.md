@@ -183,7 +183,7 @@ Este é um projeto open source e adoraríamos receber sua contribuição! Existe
 - [ ] Calculadora de Tempo (diferença entre datas)
 - [ ] Calculadora de Impostos
 - [ ] Conversor de Moedas
-- [ ] Temas Claro/Escuro
+- [x] Temas Claro/Escuro
 - [ ] Testes Unitários
 - [ ] Melhorias de Acessibilidade
 - [ ] Suporte para PWA
@@ -191,7 +191,7 @@ Este é um projeto open source e adoraríamos receber sua contribuição! Existe
 ## 🚀 Roadmap
 
 - [ ] Adicionar mais calculadoras especializadas
-- [ ] Implementar modo escuro/claro
+- [x] Implementar modo escuro/claro
 - [ ] Adicionar suporte a temas personalizados
 - [ ] Criar versão mobile-first
 - [ ] Adicionar histórico de cálculos
