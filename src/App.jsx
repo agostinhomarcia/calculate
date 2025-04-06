@@ -6,14 +6,31 @@ function App() {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || "light";
   });
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const toggleTheme = () => {
     setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   const calculators = {
@@ -66,6 +83,13 @@ function App() {
         {activeCalculator === "bmi" && <BMICalculator />}
         {activeCalculator === "billSplit" && <BillSplitCalculator />}
       </main>
+      <button
+        className={`back-to-top ${showBackToTop ? "visible" : ""}`}
+        onClick={scrollToTop}
+        aria-label="Voltar ao topo"
+      >
+        ↑
+      </button>
     </div>
   );
 }
