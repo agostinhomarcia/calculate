@@ -15,6 +15,9 @@
   --button-background: #ffffff;
   --result-gradient-start: #f8f9ff;
   --result-gradient-end: #ffffff;
+  --input-background: #ffffff;
+  --input-text: #2c3e50;
+  --input-placeholder: #94a3b8;
 }
 
 :root[data-theme="dark"] {
@@ -26,6 +29,9 @@
   --button-background: #292a3b;
   --result-gradient-start: #1a1b26;
   --result-gradient-end: #24283b;
+  --input-background: #ffffff;
+  --input-text: #1a1b26;
+  --input-placeholder: #64748b;
 }
 
 * {
@@ -150,9 +156,13 @@ select {
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
-  background-color: var(--card-background);
-  color: var(--text-color);
+  background-color: var(--input-background);
+  color: var(--input-text);
   transition: all 0.2s ease;
+}
+
+input::placeholder {
+  color: var(--input-placeholder);
 }
 
 select {
@@ -166,12 +176,14 @@ select {
 
 optgroup {
   font-weight: 600;
-  color: var(--text-color);
+  color: var(--input-text);
+  background-color: var(--input-background);
 }
 
 option {
   padding: 0.8rem;
-  color: var(--text-color);
+  color: var(--input-text);
+  background-color: var(--input-background);
 }
 
 input:focus,
