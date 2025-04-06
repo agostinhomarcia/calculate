@@ -1,8 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
   const [activeCalculator, setActiveCalculator] = useState("percentage");
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "light";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
+  };
 
   const calculators = {
     percentage: "Calculadora de Porcentagem",
@@ -18,7 +30,18 @@ function App() {
   return (
     <div className="app">
       <header>
-        <h1>Calculadoras Úteis</h1>
+        <div className="header-content">
+          <h1>Calculadoras Úteis</h1>
+          <button
+            onClick={toggleTheme}
+            className="theme-toggle"
+            aria-label={`Alternar para tema ${
+              theme === "light" ? "escuro" : "claro"
+            }`}
+          >
+            {theme === "light" ? "🌙" : "☀️"}
+          </button>
+        </div>
         <nav>
           {Object.entries(calculators).map(([key, label]) => (
             <button

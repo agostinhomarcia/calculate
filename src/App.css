@@ -1,12 +1,31 @@
 :root {
+  /* Light Theme (default) */
   --primary-color: #646cff;
-  --secondary-color: #2c3e50;
-  --background-color: #f8f9ff;
-  --text-color: #2c3e50;
-  --border-color: #e1e4f5;
   --gradient-start: #646cff;
   --gradient-end: #5457ff;
   --shadow-color: rgba(100, 108, 255, 0.08);
+}
+
+:root[data-theme="light"] {
+  --background-color: #f8f9ff;
+  --text-color: #2c3e50;
+  --secondary-color: #2c3e50;
+  --border-color: #e1e4f5;
+  --card-background: #ffffff;
+  --button-background: #ffffff;
+  --result-gradient-start: #f8f9ff;
+  --result-gradient-end: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #1a1b26;
+  --text-color: #ffffff;
+  --secondary-color: #a9b1d6;
+  --border-color: #292a3b;
+  --card-background: #24283b;
+  --button-background: #292a3b;
+  --result-gradient-start: #1a1b26;
+  --result-gradient-end: #24283b;
 }
 
 * {
@@ -25,6 +44,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .app {
@@ -68,7 +88,7 @@ nav {
 }
 
 button {
-  background-color: white;
+  background-color: var(--button-background);
   border: 2px solid var(--border-color);
   color: var(--text-color);
   padding: 0.7rem 1.2rem;
@@ -96,7 +116,7 @@ button.active {
 }
 
 .calculator {
-  background-color: white;
+  background-color: var(--card-background);
   padding: 2.5rem;
   border-radius: 24px;
   box-shadow: 0 8px 32px var(--shadow-color);
@@ -104,6 +124,7 @@ button.active {
   max-width: 500px;
   margin: 0 auto;
   border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
 }
 
 h2 {
@@ -129,7 +150,7 @@ select {
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
-  background-color: white;
+  background-color: var(--card-background);
   color: var(--text-color);
   transition: all 0.2s ease;
 }
@@ -184,7 +205,11 @@ button.calculate:hover {
 }
 
 .result {
-  background: linear-gradient(135deg, #f8f9ff, #ffffff);
+  background: linear-gradient(
+    135deg,
+    var(--result-gradient-start),
+    var(--result-gradient-end)
+  );
   padding: 1.5rem;
   border-radius: 16px;
   text-align: center;
@@ -205,6 +230,37 @@ button.calculate:hover {
 
 .result p:last-child {
   margin-bottom: 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.theme-toggle {
+  position: absolute;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  box-shadow: none;
+}
+
+.theme-toggle:hover {
+  transform: rotate(15deg);
+  background: transparent;
+  box-shadow: none;
 }
 
 @media (max-width: 768px) {
@@ -246,5 +302,10 @@ button.calculate:hover {
 
   .result p {
     font-size: 1.1rem;
+  }
+
+  .theme-toggle {
+    right: 0.5rem;
+    font-size: 1.2rem;
   }
 }
