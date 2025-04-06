@@ -255,12 +255,13 @@ button.calculate:hover {
   width: 100%;
   margin-bottom: 1.5rem;
   padding: 0 3rem;
+  min-height: 60px;
 }
 
 .theme-toggle {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 75%;
   transform: translateY(-50%);
   background: transparent;
   border: none;
@@ -359,10 +360,12 @@ button.calculate:hover {
 
   .header-content {
     padding: 0 2.5rem;
+    min-height: 50px;
   }
 
   .theme-toggle {
     right: 0;
+    top: 75%;
     font-size: 1.2rem;
     margin-right: 0.5rem;
   }
