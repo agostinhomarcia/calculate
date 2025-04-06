@@ -200,10 +200,10 @@ Este é um projeto open source e adoraríamos receber sua contribuição! Existe
 
 ## 📊 Status do Projeto
 
-![GitHub stars](https://img.shields.io/github/stars/agostinhomarcia/calculate?style=social)
-![GitHub forks](https://img.shields.io/github/forks/agostinhomarcia/calculate?style=social)
-![GitHub issues](https://img.shields.io/github/issues/agostinhomarcia/calculate)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/agostinhomarcia/calculate)
+![GitHub stars](https://img.shields.io/github/stars/agostinhomarcia/calculate?style=for-the-badge&logo=github&logoColor=white)
+![GitHub forks](https://img.shields.io/github/forks/agostinhomarcia/calculate?style=for-the-badge&logo=github&logoColor=white)
+![GitHub issues](https://img.shields.io/github/issues/agostinhomarcia/calculate?style=for-the-badge&logo=github&logoColor=white)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/agostinhomarcia/calculate?style=for-the-badge&logo=github&logoColor=white)
 
 ## 📝 Licença
 
