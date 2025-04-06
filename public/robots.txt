@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://calculadoras-uteis.vercel.app/sitemap.xml 
