@@ -188,6 +188,16 @@ Este é um projeto open source e adoraríamos receber sua contribuição! Existe
 - [ ] Melhorias de Acessibilidade
 - [ ] Suporte para PWA
 
+## 🚀 Roadmap
+
+- [ ] Adicionar mais calculadoras especializadas
+- [ ] Implementar modo escuro/claro
+- [ ] Adicionar suporte a temas personalizados
+- [ ] Criar versão mobile-first
+- [ ] Adicionar histórico de cálculos
+- [ ] Implementar exportação de resultados
+- [ ] Adicionar suporte a múltiplos idiomas
+
 ## 📊 Status do Projeto
 
 ![GitHub stars](https://img.shields.io/github/stars/agostinhomarcia/calculate?style=social)
