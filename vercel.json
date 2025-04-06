@@ -9,7 +9,7 @@
       "destination": "/sitemap.xml"
     }
   ],
-  "buildCommand": "npm run build",
+  "buildCommand": "npm install && npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
   "headers": [
@@ -38,5 +38,11 @@
       "src": "/sitemap.xml",
       "dest": "/api/sitemap.js"
     }
-  ]
+  ],
+  "functions": {
+    "api/sitemap.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
 }
