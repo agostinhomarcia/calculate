@@ -6,6 +6,17 @@
 
 Uma coleção de calculadoras úteis para o dia a dia, desenvolvida com React e Vite.
 
+## 📱 Demonstração
+
+<p align="center">
+  <img alt="Calculadoras Úteis" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3ZlMzdhajl1cG1udDkxMTE0b3JxM2R0Njk4cnppN2J0ZTExeHZweSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HbffzXmtcTW1ArPHAL/giphy.gif" width="100%">
+</p>
+
+<p align="center">
+  <img alt="Calculadora de Combustível" src="./assets/calculates.png" width="45%">
+  <img alt="Conversor de Unidades" src="./assets/calc2.png" width="45%">
+</p>
+
 ## 📌 Funcionalidades
 
 O projeto inclui as seguintes calculadoras:
@@ -100,7 +111,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 👩‍💻 Autor
 
 Feito com ❤️ por [Márcia Agostinho](https://github.com/agostinhomarcia)
-
----
-
-⌨️ com ❤️ por [Márcia Agostinho](https://github.com/agostinhomarcia) 😊
