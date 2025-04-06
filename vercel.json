@@ -31,5 +31,12 @@
         }
       ]
     }
+  ],
+  "version": 2,
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "dest": "/api/sitemap.js"
+    }
   ]
 }
