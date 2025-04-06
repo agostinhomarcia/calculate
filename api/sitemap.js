@@ -13,5 +13,5 @@ export default function handler(req, res) {
   </url>
 </urlset>`;
 
-  res.status(200).send(xml);
+  res.send(xml);
 } 
