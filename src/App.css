@@ -254,11 +254,14 @@ button.calculate:hover {
   position: relative;
   width: 100%;
   margin-bottom: 1.5rem;
+  padding: 0 3rem;
 }
 
 .theme-toggle {
   position: absolute;
-  right: 1rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   background: transparent;
   border: none;
   font-size: 1.5rem;
@@ -270,6 +273,7 @@ button.calculate:hover {
   justify-content: center;
   transition: transform 0.3s ease;
   box-shadow: none;
+  margin-right: 1rem;
 }
 
 .theme-toggle:hover {
@@ -353,9 +357,14 @@ button.calculate:hover {
     font-size: 1.1rem;
   }
 
+  .header-content {
+    padding: 0 2.5rem;
+  }
+
   .theme-toggle {
-    right: 0.5rem;
+    right: 0;
     font-size: 1.2rem;
+    margin-right: 0.5rem;
   }
 
   .back-to-top {
