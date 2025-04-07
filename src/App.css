@@ -273,7 +273,7 @@ button.calculate:hover {
 .theme-toggle {
   font-size: 1.8rem;
   background: none;
-  border: none;
+  border: 2px solid var(--border-color);
   cursor: pointer;
   padding: 0.5rem;
   position: absolute;
@@ -288,17 +288,19 @@ button.calculate:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .theme-toggle:hover {
   transform: translateY(-2px);
   background: none;
   color: var(--text-color);
+  border-color: var(--border-color);
 }
 
 [data-theme="dark"] .theme-toggle {
   color: var(--text-color);
+  border-color: var(--border-color);
 }
 
 /* Botão Voltar ao Topo */
@@ -391,6 +393,7 @@ button.calculate:hover {
     right: 0.5rem;
     width: 40px;
     height: 40px;
+    border: 2px solid var(--border-color);
   }
 
   .back-to-top {
