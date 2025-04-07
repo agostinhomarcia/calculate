@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 // Main App Component - CalcularBrasil
+// Última atualização: Layout e Logo - 2024-04-07
 function App() {
   const [activeCalculator, setActiveCalculator] = useState("percentage");
   const [theme, setTheme] = useState(() => {
