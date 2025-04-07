@@ -250,26 +250,17 @@ button.calculate:hover {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--primary-color);
-  text-decoration: none;
-  padding: 0.5rem;
-  min-width: 150px;
-  text-align: left;
+  position: relative;
 }
 
 .header-content h1 {
   font-size: 2rem;
   margin: 0;
-  flex: 1;
+  text-align: center;
   background: linear-gradient(
     135deg,
     var(--gradient-start),
@@ -280,29 +271,26 @@ button.calculate:hover {
 }
 
 .theme-toggle {
-  font-size: 1rem;
+  font-size: 1.5rem;
   background: none;
-  border: 2px solid var(--primary-color);
-  border-radius: 20px;
+  border: none;
   cursor: pointer;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
   min-width: auto;
-  text-align: center;
   color: var(--text-color);
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 .theme-toggle:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-60%);
 }
 
 [data-theme="dark"] .theme-toggle {
-  background: var(--primary-color);
-  color: var(--background-color);
+  color: var(--text-color);
+  background: none;
 }
 
 /* Botão Voltar ao Topo */
@@ -381,24 +369,18 @@ button.calculate:hover {
   }
 
   .header-content {
-    flex-direction: column;
-    padding: 0.5rem;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-    min-width: auto;
-    text-align: center;
+    padding: 1rem 0.5rem;
+    margin-bottom: 2rem;
   }
 
   .header-content h1 {
     font-size: 1.5rem;
-    order: -1;
+    padding: 0 3rem;
   }
 
   .theme-toggle {
-    min-width: auto;
-    text-align: center;
+    font-size: 1.3rem;
+    right: 0.5rem;
   }
 
   .back-to-top {

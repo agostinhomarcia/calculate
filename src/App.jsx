@@ -50,9 +50,6 @@ function App() {
     <div className="app">
       <header>
         <div className="header-content">
-          <a href="/" className="logo">
-            CB
-          </a>
           <h1>Calculadoras Úteis - Suas Ferramentas Online</h1>
           <button
             onClick={toggleTheme}
@@ -61,7 +58,7 @@ function App() {
               theme === "light" ? "escuro" : "claro"
             }`}
           >
-            {theme === "light" ? "🌙 Modo Escuro" : "☀️ Modo Claro"}
+            {theme === "light" ? "🌙" : "☀️"}
           </button>
         </div>
         <nav>
