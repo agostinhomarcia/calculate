@@ -292,12 +292,11 @@ button.calculate:hover {
 }
 
 .theme-toggle:hover {
-  transform: translateY(-60%);
+  transform: translateY(-2px);
 }
 
 [data-theme="dark"] .theme-toggle {
   color: var(--text-color);
-  background: none;
 }
 
 /* Botão Voltar ao Topo */
