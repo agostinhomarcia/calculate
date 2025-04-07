@@ -61,7 +61,7 @@ function App() {
               theme === "light" ? "escuro" : "claro"
             }`}
           >
-            {theme === "light" ? "🌙" : "☀️"}
+            {theme === "light" ? "🌙 Modo Escuro" : "☀️ Modo Claro"}
           </button>
         </div>
         <nav>
