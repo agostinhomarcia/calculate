@@ -250,12 +250,29 @@ button.calculate:hover {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: space-between;
+  padding: 1rem 2rem;
   width: 100%;
-  margin-bottom: 1.5rem;
-  padding: 0 3rem;
-  min-height: 60px;
+  gap: 1rem;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-color);
+  text-decoration: none;
+  background: linear-gradient(45deg, #4a90e2, #63b3ed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 .theme-toggle {
@@ -359,8 +376,19 @@ button.calculate:hover {
   }
 
   .header-content {
-    padding: 0 2.5rem;
-    min-height: 50px;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .header-content h1 {
+    font-size: 1.5rem;
+    order: -1;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
   }
 
   .theme-toggle {

@@ -48,6 +48,9 @@ function App() {
     <div className="app">
       <header>
         <div className="header-content">
+          <a href="/" className="logo">
+            CalcularBrasil
+          </a>
           <h1>Calculadoras Úteis</h1>
           <button
             onClick={toggleTheme}
