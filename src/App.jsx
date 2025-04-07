@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
+// Main App Component - CalcularBrasil
 function App() {
   const [activeCalculator, setActiveCalculator] = useState("percentage");
   const [theme, setTheme] = useState(() => {
