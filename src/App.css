@@ -67,9 +67,8 @@ body {
 }
 
 header {
-  text-align: center;
-  margin-bottom: 2.5rem;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -251,28 +250,43 @@ button.calculate:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem;
   width: 100%;
-  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .header-content h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   flex-grow: 1;
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--text-color);
   text-decoration: none;
-  background: linear-gradient(45deg, #4a90e2, #63b3ed);
+  background: linear-gradient(
+    45deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  white-space: nowrap;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .theme-toggle {
@@ -376,15 +390,13 @@ button.calculate:hover {
   }
 
   .header-content {
-    padding: 1rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .header-content h1 {
     font-size: 1.5rem;
     order: -1;
-    width: 100%;
-    margin-bottom: 0.5rem;
   }
 
   .logo {
