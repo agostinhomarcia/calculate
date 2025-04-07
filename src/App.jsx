@@ -52,7 +52,7 @@ function App() {
           <a href="/" className="logo">
             CalcularBrasil
           </a>
-          <h1>Calculadoras Úteis</h1>
+          <h1>Calculadoras Úteis - Suas Ferramentas Online</h1>
           <button
             onClick={toggleTheme}
             className="theme-toggle"
