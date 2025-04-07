@@ -271,7 +271,7 @@ button.calculate:hover {
 }
 
 .theme-toggle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -283,8 +283,8 @@ button.calculate:hover {
   min-width: auto;
   color: var(--text-color);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,6 +293,8 @@ button.calculate:hover {
 
 .theme-toggle:hover {
   transform: translateY(-2px);
+  background: none;
+  color: var(--text-color);
 }
 
 [data-theme="dark"] .theme-toggle {
@@ -385,8 +387,10 @@ button.calculate:hover {
   }
 
   .theme-toggle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     right: 0.5rem;
+    width: 40px;
+    height: 40px;
   }
 
   .back-to-top {
