@@ -11,6 +11,7 @@
   --text-color: #2c3e50;
   --secondary-color: #2c3e50;
   --border-color: #e1e4f5;
+  --theme-button-border: #d1d5db;
   --card-background: #ffffff;
   --button-background: #ffffff;
   --result-gradient-start: #f8f9ff;
@@ -26,6 +27,7 @@
   --text-color: #ffffff;
   --secondary-color: #a9b1d6;
   --border-color: #292a3b;
+  --theme-button-border: #414868;
   --card-background: #24283b;
   --button-background: #292a3b;
   --result-gradient-start: #1a1b26;
@@ -273,9 +275,9 @@ button.calculate:hover {
 .theme-toggle {
   font-size: 1.8rem;
   background: none;
-  border: 2px solid var(--border-color);
+  border: 2px solid var(--theme-button-border);
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.6rem;
   position: absolute;
   right: 1rem;
   top: 50%;
@@ -283,24 +285,26 @@ button.calculate:hover {
   min-width: auto;
   color: var(--text-color);
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .theme-toggle:hover {
   transform: translateY(-2px);
   background: none;
   color: var(--text-color);
-  border-color: var(--border-color);
+  border-color: var(--theme-button-border);
+  box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 [data-theme="dark"] .theme-toggle {
   color: var(--text-color);
-  border-color: var(--border-color);
+  border-color: var(--theme-button-border);
 }
 
 /* Botão Voltar ao Topo */
@@ -391,9 +395,10 @@ button.calculate:hover {
   .theme-toggle {
     font-size: 1.5rem;
     right: 0.5rem;
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--border-color);
+    width: 42px;
+    height: 42px;
+    padding: 0.5rem;
+    border: 2px solid var(--theme-button-border);
   }
 
   .back-to-top {
