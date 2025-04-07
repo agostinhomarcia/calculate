@@ -36,14 +36,46 @@ function App() {
   };
 
   const calculators = {
-    percentage: "Calculadora de Porcentagem",
-    fuelCalc: "Calculadora de Combustível",
-    profitMargin: "Margem de Lucro",
-    compoundInterest: "Juros Compostos",
-    unitConverter: "Conversão de Unidades",
-    discount: "Desconto de Produtos",
-    bmi: "Calculadora de IMC",
-    billSplit: "Divisão de Contas",
+    percentage: {
+      title: "Calculadora de Porcentagem",
+      description:
+        "Calcule facilmente porcentagens, descontos e aumentos. Ideal para cálculos de descontos em compras, aumentos salariais e análises percentuais.",
+    },
+    fuelCalc: {
+      title: "Calculadora de Combustível",
+      description:
+        "Compare custos entre combustíveis, calcule consumo médio e gastos por quilômetro. Perfeita para planejar viagens e controlar gastos com combustível.",
+    },
+    profitMargin: {
+      title: "Margem de Lucro",
+      description:
+        "Calcule margens de lucro bruto e líquido, defina preços de venda e analise a rentabilidade do seu negócio.",
+    },
+    compoundInterest: {
+      title: "Juros Compostos",
+      description:
+        "Planeje seus investimentos calculando juros compostos, rendimentos futuros e crescimento do capital ao longo do tempo.",
+    },
+    unitConverter: {
+      title: "Conversão de Unidades",
+      description:
+        "Converta facilmente entre diferentes unidades de medida: comprimento, peso, volume e mais. Ideal para uso doméstico e profissional.",
+    },
+    discount: {
+      title: "Desconto de Produtos",
+      description:
+        "Calcule valores com desconto, economia total e preço final. Ótimo para comparar preços e avaliar promoções.",
+    },
+    bmi: {
+      title: "Calculadora de IMC",
+      description:
+        "Calcule seu Índice de Massa Corporal (IMC) e verifique sua faixa de peso ideal para uma vida mais saudável.",
+    },
+    billSplit: {
+      title: "Divisão de Contas",
+      description:
+        "Divida contas entre amigos ou grupos, incluindo taxas e serviços. Perfeito para restaurantes, viagens e eventos em grupo.",
+    },
   };
 
   return (
@@ -68,7 +100,7 @@ function App() {
               className={activeCalculator === key ? "active" : ""}
               onClick={() => setActiveCalculator(key)}
             >
-              {label}
+              {label.title}
             </button>
           ))}
         </nav>
