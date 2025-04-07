@@ -50,7 +50,7 @@ function App() {
       <header>
         <div className="header-content">
           <a href="/" className="logo">
-            CalcularBrasil
+            CB
           </a>
           <h1>Calculadoras Úteis - Suas Ferramentas Online</h1>
           <button
