@@ -3,7 +3,7 @@
   "short_name": "CalcularBrasil",
   "icons": [
     {
-      "src": "/favicon.png",
+      "src": "/despesas.png",
       "sizes": "512x512",
       "type": "image/png"
     }
