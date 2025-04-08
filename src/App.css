@@ -410,14 +410,18 @@ button.calculate:hover {
 }
 
 .calculator-description {
-  color: var(--text-color);
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin: -0.5rem 0 1.5rem;
-  padding: 0 1rem;
-  text-align: center;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.9;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-color);
+  background: var(--background-secondary);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-description p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
