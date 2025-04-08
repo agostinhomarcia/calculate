@@ -16,20 +16,16 @@ export function SEO({ calculator = "" }) {
             "Calculadoras online gratuitas para todas as suas necessidades. Ferramentas práticas e fáceis de usar para cálculos diários.",
         };
 
-    // Atualiza o título da página
     document.title = data.title;
 
-    // Atualiza ou cria meta tags
     updateMetaTag("description", data.metaDescription);
     updateMetaTag("keywords", data.keywords);
 
-    // Open Graph
     updateMetaTag("og:title", data.title);
     updateMetaTag("og:description", data.metaDescription);
     updateMetaTag("og:type", "website");
     updateMetaTag("og:url", window.location.href);
 
-    // Twitter Card
     updateMetaTag("twitter:card", "summary_large_image");
     updateMetaTag("twitter:title", data.title);
     updateMetaTag("twitter:description", data.metaDescription);

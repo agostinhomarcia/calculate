@@ -3,8 +3,6 @@ import "./App.css";
 import { SEO } from "./components/SEO";
 import { seoData } from "./seoData";
 
-// Main App Component - CalcularBrasil
-// Última atualização: Layout e Logo - 2024-04-07
 function App() {
   const [activeCalculator, setActiveCalculator] = useState("percentage");
   const [theme, setTheme] = useState(() => {
@@ -42,10 +40,7 @@ function App() {
       <SEO calculator={activeCalculator} />
       <header>
         <div className="header-content">
-          <h1>
-            {seoData[activeCalculator]?.h1 ||
-              "Calculadoras Úteis - Sua Ferramenta Online"}
-          </h1>
+          <h1>Calculadoras Úteis - Sua Ferramenta Online</h1>
           <button
             onClick={toggleTheme}
             className="theme-toggle"
