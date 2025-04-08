@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Documento com moedas -->
+  <path d="M140 100C140 89 149 80 160 80H360C371 80 380 89 380 100V400C380 411 371 420 360 420H160C149 420 140 411 140 400V100Z" fill="#FFE0B2"/>
+  <path d="M160 100H360M160 150H360" stroke="#FB8C00" stroke-width="20"/>
+  
+  <!-- Moedas -->
+  <circle cx="180" cy="350" r="40" fill="#FB8C00"/>
+  <circle cx="220" cy="370" r="40" fill="#FB8C00"/>
+  <circle cx="260" cy="350" r="40" fill="#FB8C00"/>
+  
+  <!-- Calculadora -->
+  <rect x="280" y="180" width="180" height="240" rx="20" fill="#81C784"/>
+  <rect x="300" y="200" width="140" height="40" fill="#E8F5E9"/>
+  
+  <!-- Botões da calculadora -->
+  <rect x="300" y="260" width="30" height="30" rx="5" fill="#2E7D32"/>
+  <rect x="340" y="260" width="30" height="30" rx="5" fill="#2E7D32"/>
+  <rect x="380" y="260" width="30" height="30" rx="5" fill="#FF9800"/>
+  
+  <rect x="300" y="300" width="30" height="30" rx="5" fill="#2E7D32"/>
+  <rect x="340" y="300" width="30" height="30" rx="5" fill="#2E7D32"/>
+  <rect x="380" y="300" width="30" height="30" rx="5" fill="#FF9800"/>
+  
+  <rect x="300" y="340" width="30" height="30" rx="5" fill="#2E7D32"/>
+  <rect x="340" y="340" width="30" height="30" rx="5" fill="#2E7D32"/>
+  <rect x="380" y="340" width="70" height="30" rx="5" fill="#FF9800"/>
+</svg> 

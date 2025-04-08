@@ -1,0 +1,14 @@
+{
+  "name": "CalcularBrasil",
+  "short_name": "CalcularBrasil",
+  "icons": [
+    {
+      "src": "/calculator-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#81C784",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
