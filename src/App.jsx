@@ -64,9 +64,6 @@ function App() {
         </nav>
       </header>
       <main>
-        <div className="calculator-description">
-          <p>{seoData[activeCalculator]?.description}</p>
-        </div>
         {activeCalculator === "percentage" && <PercentageCalculator />}
         {activeCalculator === "fuelCalc" && <FuelCalculator />}
         {activeCalculator === "profitMargin" && <ProfitMarginCalculator />}
@@ -77,6 +74,9 @@ function App() {
         {activeCalculator === "discount" && <DiscountCalculator />}
         {activeCalculator === "bmi" && <BMICalculator />}
         {activeCalculator === "billSplit" && <BillSplitCalculator />}
+        <div className="calculator-description">
+          <p>{seoData[activeCalculator]?.description}</p>
+        </div>
       </main>
       <button
         className={`back-to-top ${showBackToTop ? "visible" : ""}`}
