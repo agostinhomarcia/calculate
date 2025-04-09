@@ -1,5 +1,9 @@
 # 🧮 Calculadoras Úteis
 
+[![Vídeo Demonstrativo](https://img.youtube.com/vi/wpNW_2eWHcU/0.jpg)](https://youtu.be/wpNW_2eWHcU)
+
+Clique na imagem acima para assistir ao vídeo demonstrativo.
+
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
